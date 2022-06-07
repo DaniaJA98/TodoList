@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>✅To-do List</title>
 </head>
 
 
 <body>
+    <i class="fa fa-trash"></i>
     <div class="center">
         <div class="button">
             <span class="text">Lista de tareas</span>
-            <span class="icon"> <i class="fas fa-sort-down"></i></span>
+            <span class="icon">📚</span>
         </div>
 
         <div class="field">
@@ -25,17 +26,17 @@
         </div>
 
         <ul>
-            <li><span><i class="fas fa-trash"></i></span>Hacer mercado</li>
-            <li><span><i class="fas fa-trash"></i></span>Estudiar</li>
-            <li><span><i class="fas fa-trash"></i></span>Salir a merendar</li>
-            <li><span><i class="fas fa-trash"></i></span>Ducharme</li>
-            <li><span><i class="fas fa-trash"></i></span>Pagar facturas</li>
+            <li><span><i class="fa fa-trash"></i></span>Hacer mercado</li>
+            <li><span><i class="fa fa-trash"></i></span>Estudiar</li>
+            <li><span><i class="fa fa-trash"></i></span>Salir a merendar</li>
+            <li><span><i class="fa fa-trash"></i></span>Ducharme</li>
+            <li><span><i class="fa fa-trash"></i></span>Pagar facturas</li>
         </ul>
     </div>
 
     <script>
         $('.add-btn').click(function(){
-            $('ul').append("<li><span><i class='fas fa-trash'></i></span>" + $('input').val() + "</li>");
+            $('ul').append("<li><span><i class='fa fa-trash'></i></span>" + $('input').val() + "</li>");
             $('input').val("");
 
         });
